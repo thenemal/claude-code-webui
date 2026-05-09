@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Code Web UI
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/botnificent-manager
+ExecStart=/usr/bin/claude-code-webui --port 9090 --host 0.0.0.0 --claude-path /root/.local/bin/claude
+Restart=on-failure
+RestartSec=10
+Environment=HOME=/root
+
+[Install]
+WantedBy=multi-user.target
