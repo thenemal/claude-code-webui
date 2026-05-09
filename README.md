@@ -11,7 +11,7 @@ Deployment config for [claude-code-webui](https://github.com/nicholasgasior/clau
 
 ## Status
 
-⚠️ **Not working yet.** Service file not yet deployed/enabled on the host.
+✅ Working. Service running on port 9090, proxied via Caddy at `home9.compagnie-lily.org`.
 
 ## Setup
 
